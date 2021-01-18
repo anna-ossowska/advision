@@ -8,6 +8,94 @@
   color: #0387b1;
 }
 
+/* Basic button styling */
+
+.btn-main {
+  display: inline-block;
+  position: relative;
+  border: 0.15px #fff solid;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.02);
+}
+
+.btn-span {
+  display: block;
+  padding: 14px 38px;
+}
+
+.btn-main::before,
+.btn-main::after {
+  content: '';
+  width: 0;
+  height: 0.5px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #fff;
+}
+
+.btn-span::before,
+.btn-span::after {
+  content: '';
+  width: 0.5px;
+  height: 0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #fff;
+}
+
+.btn-main:hover::before,
+.btn-main:hover::after {
+  width: 100%;
+}
+
+.btn-main:hover .btn-span::before,
+.btn-main:hover .btn-span::after {
+  height: 100%;
+}
+
+/* --- Core animation-------*/
+
+.btn-main::before,
+.btn-main::after {
+  transition-delay: 0s;
+}
+
+.btn-main .btn-span::before,
+.btn-main .btn-span::after {
+  transition-delay: 0.2s;
+}
+
+.btn-main::before {
+  right: 0;
+  top: 0;
+}
+
+.btn-main::after {
+  left: 0;
+  bottom: 0;
+}
+.btn-main .btn-span::before {
+  left: 0;
+  top: 0;
+}
+
+.btn-main .btn-span::after {
+  right: 0;
+  bottom: 0;
+}
+
+.btn-main:hover::before,
+.btn-main:hover::after {
+  transition-delay: 0.2s;
+}
+
+.btn-main:hover .btn-span::before,
+.btn-main:hover .btn-span::after {
+  transition-delay: 0s;
+}
+
 .btn {
   cursor: pointer;
   display: inline-block;
@@ -68,6 +156,7 @@
 .flex-columns.flex-reverse .row {
   flex-direction: row-reverse;
 }
+
 .flex-columns .row {
   display: flex;
   flex-direction: row;
@@ -111,7 +200,7 @@
 }
 
 .flex-columns p {
-  margin: 20px 0;
+  margin: 20px 0 28px 0;
 }
 
 /* Section header */
@@ -147,8 +236,8 @@
 }
 
 .team img {
-  width: 50vh;
-  height: 50vh;
+  width: 40vh;
+  height: 40vh;
   border-radius: 50%;
   overflow: hidden;
   object-fit: cover;
@@ -156,11 +245,7 @@
 }
 
 .team .flex-items .mgmt h4 {
-  margin-top: 5px;
-}
-
-.team .flex-items .mgmt p {
-  margin-bottom: 30px;
+  margin-top: 25px;
 }
 
 .flex-items .mgmt {

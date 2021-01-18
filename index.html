@@ -36,8 +36,8 @@
       <div class="content">
         <h1>The Spirit of Expertise</h1>
         <p>We create world class business solutions</p>
-        <a href="#about" class="btn"
-          ><i class="fas fa-chevron-right"></i> &nbsp;Read more</a
+        <a href="#about" class="btn-main"
+          ><span class="btn-span">Read More</span></a
         >
       </div>
     </header>
@@ -89,7 +89,7 @@
           </div>
           <div class="column">
             <div class="column-2 bg-secondary">
-              <h4>What you are looking for</h4>
+              <h4 class="bookmark">| About our work</h4>
               <h2>We create bespoke solutions</h2>
               <p>
                 The Advision team is motivated by solving your toughest
@@ -98,8 +98,8 @@
                 services to small- and medium-sized enterprises and the public
                 sector. We guarantee sustainable financial results.
               </p>
-              <a href="#" class="btn btn-outline">
-                <i class="fas fa-chevron-right"></i> Read More</a
+              <a href="#" class="btn-main"
+                ><span class="btn-span">Read More</span></a
               >
             </div>
           </div>
@@ -109,7 +109,7 @@
       <!-- Cases -->
       <section id="cases" class="cases flex-grid section-padding">
         <header class="section-header">
-          <h4>This is what we do</h4>
+          <h4>| What we do</h4>
           <h2>Business Cases</h2>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores,
@@ -202,7 +202,7 @@
           </div>
           <div class="column">
             <div class="column-2 bg-secondary">
-              <h4>December 2020</h4>
+              <h4 class="bookmark">| December 2020</h4>
               <h2>Blog Post One</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
@@ -210,8 +210,8 @@
                 laudantium quibusdam. Officia optio pariatur nesciunt modi
                 nostrum. Laborum, dolores nam! Harum, itaque.
               </p>
-              <a href="blog.html" class="btn btn-outline">
-                <i class="fas fa-chevron-right"></i> Read Our Blog</a
+              <a href="blog.html" class="btn-main"
+                ><span class="btn-span">Read Our Blog</span></a
               >
             </div>
           </div>
@@ -221,28 +221,31 @@
       <!-- Team -->
       <section id="team" class="team section-padding">
         <header class="section-header">
-          <h4>Who we are</h4>
-          <h2>Our Team</h2>
+          <h4 class="bookmark">| Who we are</h4>
+          <h2>Comany's Management</h2>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores,
-            nobis!
+            Our leaders are passionate, collaborative people who care for you
+            and your success.
           </p>
         </header>
         <div class="flex-items">
           <div class="mgmt">
             <div>
               <img src="images/team/person1.jpg" alt="team member" />
-              <h4>John Doe</h4>
+              <h5 clas="person">John Doe</h5>
+              <div class="divider"></div>
               <p>CEO</p>
             </div>
             <div>
               <img src="images/team/person2.jpg" alt="team member" />
-              <h4>Jane Smith</h4>
+              <h5 clas="person">Jane Smith</h5>
+              <div class="divider"></div>
               <p>Vice CEO</p>
             </div>
             <div>
               <img src="images/team/person3.jpg" alt="team member" />
-              <h4>Bob Johnson</h4>
+              <h5 clas="person">Bob Johnson</h5>
+              <div class="divider"></div>
               <p class>Marketing Head</p>
             </div>
           </div>
@@ -334,7 +337,7 @@
     };
 
     // Smooth Scrolling
-    $('#navbar a, .btn').on('click', function (e) {
+    $('#navbar a, .btn-main').on('click', function (e) {
       if (this.hash !== '') {
         e.preventDefault();
 
