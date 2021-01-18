@@ -1,0 +1,171 @@
+/* Text colors */
+
+.text-primary {
+  color: #e4491c;
+}
+
+.text-secondary {
+  color: #0387b1;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 25px;
+  color: white;
+  background: #e4491c;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.btn:hover {
+  opacity: 0.95;
+}
+
+.btn-primary {
+  background: #e4491c;
+  color: #fff;
+}
+
+.btn-secondary,
+.bg-secondary {
+  background: #003246;
+  color: #fff;
+}
+
+.btn-dark,
+.bg-dark {
+  background: #333;
+  color: #fff;
+}
+
+.btn-light,
+.bg-light {
+  background: #f5f5f5;
+  color: #333;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #fff;
+}
+
+/* Flex items */
+.flex-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.flex-items > div {
+  padding: 20px;
+}
+
+/* Flex columns */
+.flex-columns.flex-reverse .row {
+  flex-direction: row-reverse;
+}
+.flex-columns .row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.flex-columns .column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+  height: 100%;
+}
+
+.flex-columns img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flex-columns .column-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.flex-columns h2 {
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.flex-columns h4 {
+  margin-bottom: 10px;
+}
+
+.flex-columns p {
+  margin: 20px 0;
+}
+
+/* Section header */
+.section-header {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.section-header h2 {
+  font-size: 40px;
+  margin: 10px 0;
+}
+
+.section-padding {
+  padding: 20px 20px 40px;
+}
+
+/* Flex Grid */
+.flex-grid .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.flex-grid .column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.team img {
+  width: 50vh;
+  height: 50vh;
+  border-radius: 50%;
+  overflow: hidden;
+  object-fit: cover;
+  margin: 0 25px;
+}
+
+.team .flex-items .mgmt h4 {
+  margin-top: 5px;
+}
+
+.team .flex-items .mgmt p {
+  margin-bottom: 30px;
+}
+
+.flex-items .mgmt {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
