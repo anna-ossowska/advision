@@ -15,14 +15,14 @@
   position: relative;
   border: 0.15px #fff solid;
   color: #fff;
-  font-size: 20px;
+  font-size: 22px;
   cursor: pointer;
   background: rgba(0, 0, 0, 0.02);
 }
 
 .btn-span {
   display: block;
-  padding: 14px 38px;
+  padding: 13px 35px;
 }
 
 .btn-main::before,

@@ -8,7 +8,7 @@
 }
 
 p {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 body {
@@ -52,7 +52,7 @@ h4 {
 h5 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 300;
-  font-size: 25px;
+  font-size: 28px;
 }
 
 p {
@@ -185,7 +185,10 @@ h3 {
   border-radius: 50%;
   margin-bottom: 15px;
 }
-
+.cases img {
+  background-position: center;
+  background-size: cover;
+}
 .cases img:hover {
   opacity: 0.8;
 }
@@ -197,7 +200,7 @@ h4 .bookmarks {
 
 /* Team */
 .team .flex-items p {
-  font-size: 20px;
+  font-size: 22px;
 }
 
 .team .flex-items h5 {
