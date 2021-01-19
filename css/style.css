@@ -89,11 +89,11 @@ img {
   font-size: 18px;
   text-transform: uppercase;
   color: #fff;
-  padding: 10px 8px;
+  padding: 10px 5px;
   margin: 0 18px;
   border-bottom: 3px transparent solid;
   padding-bottom: 10px;
-  transition: border-color 0.5s;
+  transition: border-color 0.5s ease-in-out;
 }
 
 .navbar ul {
@@ -101,6 +101,10 @@ img {
 }
 
 .navbar a:hover {
+  border-color: rgb(173, 173, 173);
+}
+
+.navbar a.current {
   border-color: #e4491c;
 }
 
