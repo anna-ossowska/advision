@@ -382,3 +382,19 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+/* Mobile */
+@media (max-width: 768px) {
+  .btn-main,
+  .btn-main-dark {
+    font-size: 18px;
+  }
+
+  .btn-span {
+    padding: 11px 26px;
+  }
+
+  .flex-columns .column-2 {
+    padding: 3rem;
+  }
+}

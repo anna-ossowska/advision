@@ -212,10 +212,6 @@ img {
   height: 40vh;
 }
 
-.hero.blog .content p {
-  width: 2000px;
-}
-
 /* Icons */
 .icons {
   padding: 30px;
@@ -393,15 +389,56 @@ h4 .bookmarks {
 
 /* Mobile */
 @media (max-width: 768px) {
+  p {
+    font-size: 20px;
+  }
+
+  /* body {
+    overflow-x: hidden;
+  } */
+
+  .hero .content h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 28px !important;
+  }
+
+  button,
+  input,
+  textarea {
+    font-size: 18px !important;
+  }
+
+  .hero .content p {
+    font-size: 18px;
+  }
+
   .navbar {
     flex-direction: column;
-    height: 120px;
+    height: 140px;
     padding: 20px;
   }
 
   .navbar a {
-    padding: 10px;
-    margin: 0 3px;
+    padding: 4px;
+    margin: 0 5px;
+    font-size: 11px;
+  }
+
+  .icon-description {
+    width: 280px !important;
+    margin: 10px !important;
+  }
+
+  .meta,
+  .date {
+    font-size: 16px;
+  }
+
+  .hero.blog {
+    height: 80vh;
   }
 
   .flex-items {
@@ -422,7 +459,7 @@ h4 .bookmarks {
   }
 
   .team .flex-items .mgmt p {
-    margin-bottom: 40px;
+    margin-bottom: 45px;
   }
 }
 
