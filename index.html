@@ -255,7 +255,12 @@
           <div class="column">
             <div class="column-2 bg-light">
               <h2>Request Callback</h2>
-              <form action="" class="callback-form">
+              <form
+                method="POST"
+                data-netlify="true"
+                data-netlify-recaptcha="true"
+                class="callback-form"
+              >
                 <div class="form-control">
                   <label for="name">Name:</label>
                   <input type="text" id="name" name="name" />
@@ -269,13 +274,14 @@
                   <input type="text" id="phone" name="phone" />
                 </div>
                 <div class="form-control">
-                  <label for="phone">Message:</label>
+                  <label for="message">Message:</label>
                   <textarea
                     class="form-control"
                     name="message"
                     style="width: 100%"
                   ></textarea>
                 </div>
+                <div data-netlify-recaptcha="true"></div>
 
                 <button type="submit" class="btn-submit">Submit</button>
               </form>
