@@ -240,7 +240,6 @@
 }
 
 /* Container main */
-
 .container {
   max-width: 1280px;
   padding: 0 1.5rem;
@@ -249,7 +248,6 @@
 }
 
 /* Container post */
-
 .container-post {
   max-width: 1280px;
   padding: 4rem 5rem;
@@ -260,6 +258,12 @@
 
 .container-post p {
   text-align: justify;
+}
+
+.container-icon {
+  width: 100%;
+  padding: 0 1.5rem;
+  margin: 10px auto;
 }
 
 /* Flex items */
@@ -396,5 +400,10 @@
 
   .flex-columns .column-2 {
     padding: 3rem;
+  }
+
+  .container-post {
+    padding: 0.5rem 1rem;
+    margin: 20px auto;
   }
 }

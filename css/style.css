@@ -18,6 +18,7 @@ body {
   color: #333;
   line-height: 1.6;
   letter-spacing: 0.25px;
+  overflow-x: hidden;
 }
 
 button,
@@ -225,10 +226,6 @@ h3 {
   margin-bottom: 15px;
 }
 
-.icons p {
-  width: 450px;
-}
-
 .icons i {
   background-color: #e4491c;
   color: #fff;
@@ -394,7 +391,7 @@ h4 .bookmarks {
   }
 
   /* body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   } */
 
   .hero .content h1 {
@@ -423,13 +420,12 @@ h4 .bookmarks {
 
   .navbar a {
     padding: 4px;
-    margin: 0 5px;
-    font-size: 11px;
+    margin: 0 4px;
+    font-size: 16px;
   }
 
-  .icon-description {
-    width: 280px !important;
-    margin: 10px !important;
+  .logo {
+    margin-top: 5px;
   }
 
   .meta,
