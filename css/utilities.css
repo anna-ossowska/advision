@@ -241,6 +241,11 @@
   overflow: hidden;
   object-fit: cover;
   margin: 0 25px;
+  transition: transform 0.6s ease-out;
+}
+
+.team img:hover {
+  transform: scaleX(1.05) scaleY(1.05);
 }
 
 .team .flex-items .mgmt h4 {
