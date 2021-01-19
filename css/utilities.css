@@ -96,33 +96,32 @@
   transition-delay: 0s;
 }
 
-.btn {
+.btn-submit {
+  width: 100%;
+  margin-top: 10px;
   cursor: pointer;
   display: inline-block;
-  padding: 10px 25px;
-  color: white;
-  background: #e4491c;
-  border: none;
+  padding: 13px 25px;
+  color: #ecad9a;
+  border: 2.5px solid #ecad9a;
+  background: #fff;
   border-radius: 5px;
   font-size: 20px;
+  font-weight: 400;
+  transition: all 0.25s ease-in-out;
 }
 
-.btn:hover {
+.btn-submit:hover {
   opacity: 0.95;
+  border: 2.5px solid #e4491c;
+  color: #e4491c;
 }
 
-.btn-primary {
-  background: #e4491c;
-  color: #fff;
-}
-
-.btn-secondary,
 .bg-secondary {
   background: #003246;
   color: #fff;
 }
 
-.btn-dark,
 .bg-dark {
   background: #333;
   color: #fff;
