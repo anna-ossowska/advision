@@ -127,8 +127,8 @@ img {
 .hero {
   background: linear-gradient(
       to right bottom,
-      rgba(1, 73, 102, 0.45),
-      rgba(1, 73, 102, 0.1)
+      rgba(1, 73, 102, 0.35),
+      rgba(1, 73, 102, 0.25)
     ),
     url('../images/home/city.jpg') no-repeat center center/cover;
   /* background: url('../images/home/city.jpg') no-repeat center center/cover; */
