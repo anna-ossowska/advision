@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post One</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body id="home">
+    <header class="hero blog">
+      <div class="navbar top" id="navbar">
+        <h1 class="logo">
+          <span class="text-primary"><i class="fas fa-book-open"></i> Ad</span
+          >vision
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#cases">Work</a></li>
+            <li><a href="blog.html" class="current">Blog</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <h1>Blog</h1>
+        <p>Get informed and optimize your business</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="container-post bg-light">
+        <section class="post">
+          <h2>The Next Chapter of Data Privacy</h2>
+          <p class="meta">
+            <i class="fas fa-user"></i> &nbsp;Posted by
+            <strong>Rodney R. Sides</strong>
+          </p>
+          <p class="date"><i class="far fa-calendar-alt"></i> &nbsp;December 22, 2020</p>
+          <div class="py-2"></div>
+          <article>
+          <p class="lead">
+            <strong>
+              Strong data privacy policies can be the first step to enabling
+              consumer trust and loyalty in the new economic environment.</strong
+            >
+          </p>
+          <div class="py-small"></div>
+          <p>
+            During the height of the COVID-19 pandemic, governments in China, South Korea, and Singapore employed geo-tracking technologies to help plot the trajectory of infection rates. In the United States, similar applications raised privacy fears and trust concerns—even at a time when such systems could potentially serve the greater good.
+          </p>
+          <div class="py-small"></div>
+          <p>
+            Though an opt-in program, the data collected in the name of public health and the public good directly challenged consumers’ sense of privacy. This has been evident in Deloitte’s recent social sensing reports,2 where negative mentions of digital contact tracing increased 115% from March 16 through April 27. As debate intensifies around this issue, it appears we have reached an inflection point where consumers bargain away some of their privacy in the name of public safety (similar to post 9/11 monitoring). If consumers believe giving up data for public health is a step too far, where does that leave retailers who want to collect data for monetization, marketing, and sales?
+          </p>
+          <div class="py-small"></div>
+          <p>
+            This issue is particularly important as retailers operate in a manner to support public health outcomes. They may inadvertently collect personal health information about their employees and customers. Consumers are gaining an understanding of the breadth, depth, and power of the data collected on them, and the analyses performed. For example, if a consumer buys flu medicine at a local pharmacy, should one be concerned that the purchase is being tracked? And why? Is it just to aid the retailer’s future marketing efforts? Or, could there be another purpose?
+          </p>
+          <div class="py-small"></div>
+          <p>
+            Additionally, some retailers are using temperature monitoring to “safeguard” employees. What are the consequences of collecting that data? How is it used, attributed, and stored? What uses could there be beyond protecting the staff?
+          </p>
+          <div class="py-small"></div>
+          <p>
+            As such, it’s important for retailers to strategically engage consumers to build trust and establish ground rules for data privacy today and in the future.
+          </p>
+          <div class="py-small"></div>
+          <p>
+            It’s a tricky line to walk. Finding the balance between the need to collect and protect customers’ private information and use that data to support ongoing marketing efforts isn’t easy. But those who do can develop long-term, trust-based relationships that should help them weather any future changes in an increasingly volatile marketplace.
+          </p>
+          <div class="py-1"></div>
+          <p class="source">Source: https://www2.deloitte.com/us/en/insights/industry/retail-distribution/the-future-of-data-privacy.html </p>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copyright &copy; 2020 &nbsp;|&nbsp; Advision</p>
+    </footer>
+  </body>
+
+  <script>
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function () {
+      if (window.pageYOffset > 100) {
+        navbar.classList.remove('top');
+        if (!scrolled) {
+          navbar.style.transform = 'translateY(-70px)';
+        }
+        setTimeout(function () {
+          navbar.style.transform = 'translateY(0)';
+          scrolled = true;
+        }, 200);
+      } else {
+        navbar.classList.add('top');
+        scrolled = false;
+      }
+    };
+  </script>
+</html>

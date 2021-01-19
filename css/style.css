@@ -293,7 +293,7 @@ h4 .bookmarks {
 
 .post h2 {
   font-size: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   padding-bottom: 10px;
   border-bottom: #e4491c solid 0.5px;
   color: #e4491c;
@@ -322,7 +322,7 @@ h4 .bookmarks {
 }
 
 .source {
-  font-size: 16px;
+  font-size: 15px;
   text-align: right;
 }
 
