@@ -78,7 +78,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #333;
+  background-color: #011a24;
   color: #fff;
   opacity: 0.8;
   width: 100%;
@@ -125,8 +125,13 @@ img {
 
 /* Header */
 .hero {
-  /* background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0, 0.6)), url('../images/home/showcase.jpg') no-repeat center center/cover; */
-  background: url('../images/home/showcase.jpg') no-repeat center center/cover;
+  background: linear-gradient(
+      to right bottom,
+      rgba(1, 73, 102, 0.45),
+      rgba(1, 73, 102, 0.1)
+    ),
+    url('../images/home/city.jpg') no-repeat center center/cover;
+  /* background: url('../images/home/city.jpg') no-repeat center center/cover; */
   height: 100vh;
   position: relative;
   color: white;
@@ -174,7 +179,7 @@ img {
 }
 
 .hero.blog {
-  background: url('../images/home/blog.jpg') no-repeat center center/cover;
+  background: url('../images/home/blog.jpg') no-repeat bottom center/cover;
   height: 40vh;
 }
 
