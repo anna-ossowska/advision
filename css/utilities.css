@@ -25,7 +25,6 @@
 }
 
 /* Basic button styling (for dark background)*/
-
 .btn-main {
   display: inline-block;
   position: relative;
@@ -36,7 +35,7 @@
   background: rgba(0, 0, 0, 0.02);
 }
 
-.btn-span {
+.btn-main-span {
   display: block;
   padding: 13px 35px;
 }
@@ -51,8 +50,8 @@
   background: #fff;
 }
 
-.btn-span::before,
-.btn-span::after {
+.btn-main-span::before,
+.btn-main-span::after {
   content: '';
   width: 0.5px;
   height: 0;
@@ -66,20 +65,19 @@
   width: 100%;
 }
 
-.btn-main:hover .btn-span::before,
-.btn-main:hover .btn-span::after {
+.btn-main:hover .btn-main-span::before,
+.btn-main:hover .btn-main-span::after {
   height: 100%;
 }
 
 /* --- Core animation-------*/
-
 .btn-main::before,
 .btn-main::after {
   transition-delay: 0s;
 }
 
-.btn-main .btn-span::before,
-.btn-main .btn-span::after {
+.btn-main .btn-main-span::before,
+.btn-main .btn-main-span::after {
   transition-delay: 0.2s;
 }
 
@@ -92,12 +90,12 @@
   left: 0;
   bottom: 0;
 }
-.btn-main .btn-span::before {
+.btn-main .btn-main-span::before {
   left: 0;
   top: 0;
 }
 
-.btn-main .btn-span::after {
+.btn-main .btn-main-span::after {
   right: 0;
   bottom: 0;
 }
@@ -107,13 +105,12 @@
   transition-delay: 0.2s;
 }
 
-.btn-main:hover .btn-span::before,
-.btn-main:hover .btn-span::after {
+.btn-main:hover .btn-main-span::before,
+.btn-main:hover .btn-main-span::after {
   transition-delay: 0s;
 }
 
 /* Basic button styling (for light background)*/
-
 .btn-main-dark {
   display: inline-block;
   position: relative;
@@ -160,7 +157,6 @@
 }
 
 /* --- Core animation-------*/
-
 .btn-main-dark::before,
 .btn-main-dark::after {
   transition-delay: 0s;
